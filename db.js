@@ -10,9 +10,7 @@ const db = new pg.Pool({
   database: process.env.DB_NAME || "your_database_name",
   password: process.env.DB_PASSWORD || "your_database_password",
   port: process.env.DB_PORT || 5432,
-  ssl: {
-    rejectUnauthorized: false, // Allow self-signed certificates (if applicable)
-  },
+  ssl: false
 });
 
 
