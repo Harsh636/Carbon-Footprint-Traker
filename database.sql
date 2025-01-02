@@ -10,5 +10,6 @@ CREATE TABLE data (
     gas REAL,
     userid INT NOT NULL,
     carbonFootprint REAL,
+    date DATE,
     FOREIGN KEY (userid) REFERENCES users (id)  -- Assuming you have a 'users' table with an 'id' column
 );

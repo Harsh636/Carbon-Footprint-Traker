@@ -159,7 +159,7 @@ app.post("/submit-stats", async (req, res) => {
     parsedUserId,
     parsedCarbonFootprint,
   ];
-
+  console.log(values);
   try {
     // Execute the INSERT query
     const result = await db.query(query, values);
